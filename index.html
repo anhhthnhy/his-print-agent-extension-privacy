@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chính sách quyền riêng tư — In vòng đeo tay</title>
+<style>
+  body { font-family: "Segoe UI", Arial, sans-serif; max-width: 760px; margin: 32px auto; padding: 0 16px; line-height: 1.6; color: #1f2933; background: #fff; }
+  h1 { font-size: 1.6rem; } h2 { font-size: 1.15rem; margin-top: 1.8em; }
+  .muted { color: #616e7c; font-size: .9rem; }
+</style>
+</head>
+<body>
+<h1>Chính sách quyền riêng tư — Extension "In vòng đeo tay"</h1>
+<p class="muted">Cập nhật lần cuối: 08/10/2026</p>
+
+<p>Extension "In vòng đeo tay" là công cụ nội bộ của Bệnh viện Bưu điện. Extension thêm nút in vòng đeo tay
+bệnh nhân vào hệ thống thông tin bệnh viện (HIS) tại <code>buudienhospital.vncare.vn</code> và
+<code>histest.vncare.vn</code>. Extension chỉ phục vụ nhân viên bệnh viện và chỉ hoạt động trên hai tên miền này.</p>
+
+<h2>1. Dữ liệu extension xử lý</h2>
+<ul>
+  <li><strong>Thông tin bệnh nhân hiển thị trên HIS</strong> của dòng bệnh nhân mà nhân viên đang chọn: mã bệnh án,
+    họ tên, ngày sinh, giới tính, địa chỉ, khoa/phòng. Với sản phụ, extension đọc thêm thông tin trẻ sơ sinh
+    trên Giấy chứng sinh (giới tính, cân nặng, thời gian sinh, tên dự định).</li>
+  <li><strong>Mã phiên đăng nhập HIS</strong> do chính trang HIS lưu trong trình duyệt. Extension chỉ dùng mã này để
+    gọi dịch vụ của chính HIS, trên cùng tên miền HIS, nhằm lấy dữ liệu Giấy chứng sinh.</li>
+</ul>
+
+<h2>2. Dữ liệu được gửi đi đâu</h2>
+<ul>
+  <li>Thông tin cần in trên nhãn chỉ được gửi tới chương trình <em>InVongTay Print Agent</em> chạy
+    <strong>trên chính máy tính đó</strong>, tại địa chỉ <code>http://127.0.0.1</code>. Chương trình này dùng thông tin
+    để in ra máy in nhãn nối với máy.</li>
+  <li>Mã phiên đăng nhập HIS chỉ được gửi về máy chủ HIS mà người dùng đang đăng nhập.
+    Mã này <strong>không</strong> được gửi tới Print Agent hay bất kỳ nơi nào khác.</li>
+  <li>Extension <strong>không</strong> gửi dữ liệu tới máy chủ của nhà phát triển hay bên thứ ba nào. Extension không dùng
+    công cụ phân tích hay quảng cáo, và không tải mã từ xa.</li>
+</ul>
+
+<h2>3. Lưu trữ</h2>
+<p>Extension không tự lưu dữ liệu bệnh nhân. Dữ liệu chỉ tồn tại trong bộ nhớ trong lúc thực hiện một lệnh in.</p>
+
+<h2>4. Chia sẻ và sử dụng</h2>
+<p>Dữ liệu không được bán, không được chuyển nhượng cho bên thứ ba, và không được dùng cho mục đích nào khác ngoài
+việc in vòng đeo tay nhận dạng bệnh nhân. Dữ liệu cũng không được dùng để đánh giá tín dụng hay cho vay.</p>
+
+<h2>5. Liên hệ</h2>
+<p>Phòng Công nghệ thông tin — Bệnh viện Bưu điện. Email: <a href="mailto:anhhthnhy@gmail.com">anhhthnhy@gmail</a></p>
+</body>
+</html>
